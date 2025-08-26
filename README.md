@@ -12,5 +12,6 @@ Built using **HTML, CSS, and a little JavaScript** with the help of ai tools  an
 - ✅ Search bar to filter glossary terms instantly  
 - ✅ Hover effects for better readability  
 - ✅ Free hosting on GitHub Pages  
-
+Here some screenshots of site
+<img width="1881" height="960" alt="image" src="https://github.com/user-attachments/assets/56ea4e00-0b67-4b38-a3a2-27fe94521ecd" />
 
