@@ -1,9 +1,9 @@
 # cloud-glossary
 A simple static website that explains key **cloud computing terms** in a beginner-friendly way.  
-Built using **HTML, CSS, and a little JavaScript** and deployed for free using **GitHub Pages**.  
+Built using **HTML, CSS, and a little JavaScript** with the help of ai tools  and deployed for free using **GitHub Pages**.  
 
 ## 🌐 Live Demo  
-🔗 [View Website](
+🔗 [View Website](https://kasturiteja-h.github.io/cloud-glossary/)
 
 
 ## 📌 Features
