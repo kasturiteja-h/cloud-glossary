@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cloud Glossary</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="https://img.icons8.com/ios-filled/50/0073e6/cloud.png" type="image/png">
+</head>
+<body>
+  <header>
+    <h1>☁ Cloud Glossary Website</h1>
+    <p>A beginner-friendly glossary of essential cloud terms</p>
+    <!-- 🔎 Search Bar -->
+    <input type="text" id="search" placeholder="Search terms like IAM, CDN, SSL...">
+  </header>
+
+  <main id="glossary">
+    <!-- Core Terms -->
+    <section class="term">
+      <h2>Object Storage</h2>
+      <p>
+        A service to store website files (HTML, CSS, JS, images).  
+        Example: AWS S3, Azure Blob, Google Cloud Storage.
+      </p>
+    </section>
+
+    <section class="term">
+      <h2>Content Delivery Network (CDN)</h2>
+      <p>
+        A global caching system that makes websites load faster.  
+        Example: AWS CloudFront, Azure CDN, Google Cloud CDN.
+      </p>
+    </section>
+
+    <section class="term">
+      <h2>DNS (Domain Name System)</h2>
+      <p>
+        Translates domain names (like <i>mywebsite.com</i>) into the cloud
+        service where your website is hosted.  
+        Example: AWS Route 53, Azure DNS, Google Cloud DNS.
+      </p>
+    </section>
+
+    <section class="term">
+      <h2>SSL/TLS</h2>
+      <p>
+        Provides HTTPS security for your website.  
+        Example: AWS Certificate Manager, Google Managed SSL.
+      </p>
+    </section>
+
+    <section class="term">
+      <h2>CI/CD (Continuous Integration & Deployment)</h2>
+      <p>
+        Automates the process of deploying website changes from GitHub or other repos.  
+        Example: AWS CodePipeline, Azure DevOps, Google Cloud Build.
+      </p>
+    </section>
+
+    <!-- Extra Terms -->
+    <section class="term">
+      <h2>IAM (Identity and Access Management)</h2>
+      <p>
+        A cloud service that manages **who can access what**.  
+        It controls permissions for users, groups, and roles.  
+        Example: AWS IAM, Azure Active Directory, Google IAM.
+      </p>
+    </section>
+
+    <section class="term">
+      <h2>Serverless Computing</h2>
+      <p>
+        A model where you run code without managing servers.  
+        You only pay for execution time.  
+        Example: AWS Lambda, Azure Functions, Google Cloud Functions.
+      </p>
+    </section>
+
+    <section class="term">
+      <h2>Cloud Monitoring</h2>
+      <p>
+        Services that track performance, errors, and usage of cloud apps.  
+        Example: AWS CloudWatch, Azure Monitor, Google Cloud Monitoring.
+      </p>
+    </section>
+
+    <section class="term">
+      <h2>Load Balancer</h2>
+      <p>
+        A service that distributes traffic across multiple servers  
+        to keep apps fast and reliable.  
+        Example: AWS Elastic Load Balancing, Azure Load Balancer, GCP Load Balancer.
+      </p>
+    </section>
+
+    <section class="term">
+      <h2>Virtual Machine (VM)</h2>
+      <p>
+        A software-based computer running inside a cloud server.  
+        You can install OS and apps just like on a physical PC.  
+        Example: AWS EC2, Azure Virtual Machines, Google Compute Engine.
+      </p>
+    </section>
+
+    <section class="term">
+      <h2>Containers</h2>
+      <p>
+        Lightweight environments that package apps and dependencies together.  
+        Easier to run, move, and scale.  
+        Example: Docker, Kubernetes.
+      </p>
+    </section>
+
+    <section class="term">
+      <h2>Database as a Service (DBaaS)</h2>
+      <p>
+        Cloud-based databases that are fully managed for you.  
+        No need to install or manage servers.  
+        Example: AWS RDS, Azure SQL Database, Google Cloud SQL.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>📘 Built with HTML, CSS & JS | Cloud Glossary Project</p>
+  </footer>
+
+  <!-- 🔎 Search Script -->
+  <script>
+    const searchInput = document.getElementById("search");
+    const terms = document.querySelectorAll(".term");
+
+    searchInput.addEventListener("keyup", function() {
+      let filter = searchInput.value.toLowerCase();
+      terms.forEach(term => {
+        let text = term.innerText.toLowerCase();
+        term.style.display = text.includes(filter) ? "" : "none";
+      });
+    });
+  </script>
+</body>
+</html>
